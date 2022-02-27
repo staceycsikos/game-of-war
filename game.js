@@ -1,41 +1,37 @@
 
-// let cards = [
-//   clubs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 , 13 , 14],
-//   diamonds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 , 13 , 14],
-//   hearts = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 , 13 , 14],
-//   spades = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 , 13 , 14],
-// ]
+
+const clubs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+const diamonds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+const hearts = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+const spades = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
  
-// let combinecards = cards.concat(clubs, diamonds, hearts, spades)
+let cards = clubs.concat(diamonds, hearts, spades)
 
-// // shuffle = (array) => {
-// //   array.sort(() => Math.random() - 0.5);
-// // }
 
-// // shuffle(combinecards)
 
-// console.log(combinecards)
+// function shuffle(array) {
+//   let copy = [], n = array.length, i;
 
-let myFavoriteNumbers = [ 1, 23, 22, 4, 25, 8, 15, 20]
+//   // While there remain elements to shuffle…
+//   while (n) {
 
-function shuffle(array) {
-  let copy = [], n = array.length, i;
+//     // Pick a remaining element…
+//     i = Math.floor(Math.random() * array.length);
 
-  // While there remain elements to shuffle…
-  while (n) {
+//     // If not already shuffled, move it to the new array.
+//     if (i in array) {
+//       copy.push(array[i]);
+//       delete array[i];
+//       n--;
+//     }
+//   }
 
-    // Pick a remaining element…
-    i = Math.floor(Math.random() * array.length);
+//   return copy;
+// }
 
-    // If not already shuffled, move it to the new array.
-    if (i in array) {
-      copy.push(array[i]);
-      delete array[i];
-      n--;
-    }
-  }
 
-  return copy;
-}
+// shuffle(combinecards)
 
-console.log(shuffle(myFavoriteNumbers))
+// console.log(shuffle(combinecards))
+
